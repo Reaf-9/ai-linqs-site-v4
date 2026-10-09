@@ -441,3 +441,13 @@ details[open] .faq__pm::after { content: "−"; }
 @media (max-width: 767px) { .flow-chart { flex-direction: column; align-items: flex-start; } .flow-chart .flow-arrow { transform: rotate(90deg); margin-left: 8px; } }
 /* 事例：写真が届くまでは文字だけ */
 .case-cards .card { gap: 0; }
+/* v4.1：ヒーローのキャッチを大きく・太く。暗幕を少し濃くして文字を立たせる */
+@media (min-width: 1200px) {
+  .hero::before { background: rgba(15,15,17,.56); }
+  .hero-copy { width: 56%; max-width: 56%; }
+  .hero-copy h1.catch { font-size: clamp(48px, 4.6vw, 76px); line-height: 1.25; letter-spacing: .03em; }
+  .hero-copy .eyebrow { font-size: 17px; font-weight: 500; }
+  .hero-copy .lead { font-size: 18px; max-width: 32em; }
+}
+@media (min-width: 768px) and (max-width: 1199px) { .hero-copy h1.catch { font-size: 56px; line-height: 1.25; } }
+@media (max-width: 767px) { .hero-copy h1.catch { font-size: clamp(32px, 9.2vw, 44px); line-height: 1.25; } }
