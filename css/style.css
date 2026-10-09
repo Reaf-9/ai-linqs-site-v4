@@ -451,3 +451,22 @@ details[open] .faq__pm::after { content: "−"; }
 }
 @media (min-width: 768px) and (max-width: 1199px) { .hero-copy h1.catch { font-size: 56px; line-height: 1.25; } }
 @media (max-width: 767px) { .hero-copy h1.catch { font-size: clamp(32px, 9.2vw, 44px); line-height: 1.25; } }
+/* ===== v4.2（10/9 動画フィードバック） ===== */
+/* 見出しは明朝・太字に統一 */
+h1, h2, h3, .page-band h1, .contract-copy h4, .catch { font-family: "Shippori Mincho B1", "Noto Serif JP", serif; font-weight: 700; letter-spacing: .02em; }
+h1, h2 { line-height: 1.35; }
+h3 { line-height: 1.5; }
+.reason-cards h3 { font-size: 20px; white-space: nowrap; }
+.values h3 { font-size: 20px; }
+/* 「費用はかかりません。」を強く */
+.contract-copy .em { font-weight: 700; color: var(--blue); }
+/* いまです：ボタンを本文の幅の中央に */
+.timing-copy .actions { max-width: 38em; justify-content: center; }
+/* 導入事例（トップ）：課題・成果を載せる */
+.case-cards .card-body { gap: 12px; }
+.case-cards .tags { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 12px; color: var(--blue); }
+.case-cards .tags span + span { color: var(--muted, #616267); }
+.case-cards .case { margin: 8px 0 0; }
+.case-cards .case > div + div { margin-top: 16px; }
+.case-cards .case dt { font-size: 13px; }
+.case-cards .case dd { font-size: 15px; line-height: 1.8; }
